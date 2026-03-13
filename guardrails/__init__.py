@@ -22,6 +22,7 @@ from .models import (
 from .injection_detector import InjectionDetector
 from .jailbreak_detector import JailbreakDetector
 from .pii_detector import PIIDetector
+from .policy_enforcer import Policy, PolicyEnforcer, PolicyRule, RuleType, DEFAULT_POLICY
 
 __all__ = [
     # Models
@@ -37,6 +38,12 @@ __all__ = [
     "InjectionDetector",
     "JailbreakDetector",
     "PIIDetector",
+    # Policy
+    "Policy",
+    "PolicyEnforcer",
+    "PolicyRule",
+    "RuleType",
+    "DEFAULT_POLICY",
 ]
 
 __version__ = "0.1.0"
